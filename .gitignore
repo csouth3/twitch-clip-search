@@ -90,4 +90,5 @@ sw.*
 # Vim swap files
 *.swp
 
+**/bin
 **/obj
