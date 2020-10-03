@@ -8,7 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.8" />
     <PackageReference Include="TwitchLib" Version="3.1.1" />
+    <PackageReference Include="TwitchLib.Api" Version="3.1.4-CI-20200902-20" />
   </ItemGroup>
 
 </Project>

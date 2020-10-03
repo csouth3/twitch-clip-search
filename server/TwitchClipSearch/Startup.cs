@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TwitchClipSearch.Models;
 
 namespace TwitchClipSearch
 {
@@ -26,6 +27,7 @@ namespace TwitchClipSearch
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+      services.Configure<TwitchApiSettings>(Configuration.GetSection("TwitchApiSettings"));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
