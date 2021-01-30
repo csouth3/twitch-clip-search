@@ -80,6 +80,7 @@ dist
 # IDE / Editor
 .idea
 .vs
+**/*.user
 
 # Service worker
 sw.*
